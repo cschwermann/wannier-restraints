@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ $# -eq 1 ]; then
+	mkdir -p $1
+	for i in $( LANG=en_US seq 0.0 0.1 1.0 ); do 
+		k=$( echo $i | tr -d '.')
+		j=$( expr $k + 1 )
+   		cp $i/WC_POT.xyz $1/WC_POT_$j.xyz
+	done
+else
+	for i in $( LANG=en_US seq 0.0 0.1 1.0 ); do 
+		k=$( echo $i | tr -d '.')
+		j=$( expr $k + 1 )
+   		cp $i/WC_POT.xyz WC_POT_$j.xyz
+	done
+fi
