@@ -1,6 +1,6 @@
 # Wannier-Restraints
 The scripts / programs in this repository are useful for the analysis of results produced by the modified CPMD (https://www.cpmd.org) code presented in
-C. Schwermann and N. L. Doltsinis. “Exciton transfer free energy from Car–Parrinello molecular dynamics”. Phys. Chem. Chem. Phys. (2020). Advance Article (https://doi.org/10.1039/C9CP06419B).
+C. Schwermann and N. L. Doltsinis. “Exciton transfer free energy from Car–Parrinello molecular dynamics”. Phys. Chem. Chem. Phys. 22 (2020), 10526, https://doi.org/10.1039/C9CP06419B.
 
 ## cpwan
 cpwan is a short script which renames the "WC_POT.xyz" trajectories from several subfolders, arranged by their reaction coordinate, to WC_POT_1.xyz, WC_POT_2.xyz, etc. The script copies these files either to the current directory, or if an argument is given, to the specified directory. The renamed files can then be used as input for the umbrella.f90 analysis program.
